@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+
+body {
+    background-color: rgb(24, 22, 22);
+    color: whitesmoke;
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 25px;
+    background: cover;
+    background-image: radial-gradient(at center, rgba(74, 74, 74, 0.85) 0%, rgba(26, 26, 26, 0.45) 50%, rgba(0, 0, 0, 0.85) 100%),  url('https://i.pinimg.com/originals/b1/b2/04/b1b2044ed0eb92176d4eee67c2d6d119.png?nii=t');
+    background-size: 100% 100.214%;
+    filter: brightness();
+}
+
+
+
+
+.test{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 98vh;
+}
+
+.radio-input {
+    appearance: none;
+    -webkit-appearance: none; 
+}
+
+.radio-input {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #0d6efd;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 0;
+}
+
+.radio-input:checked{
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+}
+
+/* Эффект нажатия */
+.radio-input:active {
+    filter: brightness(90%);
+}
+
+/* Смена цвета границы при наведении */
+.radio-input:hover:not(:disabled) {
+    border-color: #0d6efd;
+}
+
+/* Стили для чекбокса при фокусе */
+.radio-input:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Отключенный чекбокс */
+.radio-input:disabled {
+    filter: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.radio-input:disabled ~ .radio-label {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+label{
+    margin-left: 10px;
+}
+
+input[type='submit']{
+    font-size: 25px;
+    padding: 5px 25px;
+}
